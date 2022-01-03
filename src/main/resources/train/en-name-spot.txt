@@ -1,0 +1,12 @@
+<START:who> His pants <END> were spotted with <START:what> mud. <END>
+<START:who> I <END> finally spotted <START:what> my friend <END> in the crowd.
+<START:who> I <END> just spotted <START:what> a mistake <END> on the front cover.
+
+
+
+
+
+
+
+
+
