@@ -1,0 +1,21 @@
+{
+  "spot": {
+    "family":"some-family",
+    "usage-sequence": {
+      "NN1-spot-NN2": {
+        "questions": {
+          "who": "NN1",
+          "what": "NN2"
+        }
+      },
+      "NN1-spot-NN2-at-NN3": {
+        "questions": {
+          "who": "NN1",
+          "what": "NN2",
+          "when": "NN3"
+        }
+      }
+    }
+
+  }
+}
