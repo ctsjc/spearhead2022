@@ -1,0 +1,27 @@
+<p>show-sentences works!</p>
+
+
+<textarea cols="30" rows="4" style="width:100%; word-wrap:break-word;" 
+[(ngModel)]="staticResponse">
+  </textarea>
+  <button on-click="onAdd()" >Add</button>
+<div *ngFor="let sentence of paragraph ;let j = index">    
+    <div id=sentence{{j}} [innerHTML]="sentence.parse | safeHtml"></div><br>
+</div>
+
+<button on-click="onShow()" >Show</button>
+
+<!-- Text Area where you can modify the content -->
+<div  style="width:100%; word-wrap:break-word;"  *ngFor="let sentence of paragraph ;let j = index">    
+    <textarea  id=sentence{{j}} cols="30" rows="4" style="width:100%; word-wrap:break-word;" 
+    [(ngModel)]="sentence.firstCopy">
+      </textarea>
+</div>
+<button on-click="onSave()" >Save</button>
+
+<!-- Shows the ReadOnly SecondCopy -->
+<div *ngFor="let sentence of paragraph ;let j = index">    
+    <textarea  id=sentence{{j}} readonly cols="30" rows="4" style="width:100%; word-wrap:break-word;" 
+    [(ngModel)]="sentence.secondCopy">
+      </textarea>
+</div>

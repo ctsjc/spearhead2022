@@ -1,0 +1,29 @@
+.NP{
+    background-color:#c0ffc8;
+}
+.VP{
+    background-color: #d8f1f1;
+}
+.PP{
+    background-color:#ede3fc;
+}
+input {
+    border: none;
+    background: transparent;
+    color:#ccc;
+}
+
+textarea{
+    width: 100%;
+}
+
+textwrapper
+{
+  border:1px solid #999999;
+  margin:5px 0;
+  padding:3px;
+}
+
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }

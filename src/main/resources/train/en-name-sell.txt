@@ -1,6 +1,0 @@
-<START:what> Large portions of the deals <END> were sold to <START:whom> the general public. <END>
-The G.M. recall covered 2008-12 police models; no <START:what>  Impalas <END> sold to <START:whom> the general public <END> were affected.
-Even if <START:who> you  are <END> selling to <START:whom> a close family member or employee <END> , rushing through the sales process is not advised
-<START:who> Pakistan <END> selling <START:what> weapons <END> to <START:whom> Terrorist. <END>
-<START:who> India <END> selling <START:what> diamonds <END> to <START:whom> USA <END>
-<START:who> Radha <END> selling <START:what> vegitables <END> in <START:where> market <END> to <START:whom> people. <END>
