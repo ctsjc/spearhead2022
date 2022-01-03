@@ -1,0 +1,30 @@
+----------------
+Sentence=The 25-year-old ran a season best time of 43.85 to finish ahead of Colombia's Anthony Jose Zambrano and London 2012 winner Kirani James.
+With Marker=<NP>The 25-year-old</NP> <VP>ran</VP> <NP>a season</NP> <ADVP>best</ADVP> <NP>time</NP> <PP>of</PP> <NP>43.85</NP> <VP>to finish</VP> <ADVP>ahead</ADVP> <PP>of</PP> <NP>Colombia's Anthony Jose Zambrano and</NP> <NP>London 2012 winner Kirani James.</NP>
+Main Verb=[run, finish]
+Nouns=[The 25-year-old, a season, time, 43.85, Colombia's Anthony Jose Zambrano and, London 2012 winner Kirani James.]
+---------------------
+
+2022-01-02 22:12:45.552  INFO 59261 --- [           main] c.j.j.learning.services.KaveriWinter     : 
+----------------
+Sentence=With his upright running style, Gardiner raced clear on the final straight and even looked to ease up near the finish line to become Olympic champion.
+With Marker=<PP>With</PP> <NP>his upright running style,</NP> <NP>Gardiner</NP> <VP>raced</VP> <ADJP>clear</ADJP> <PP>on</PP> <NP>the final straight and</NP> <VP>even looked to ease</VP> <PRT>up</PRT> <PP>near</PP> <NP>the finish line</NP> <VP>to become</VP> <NP>Olympic champion.</NP>
+Main Verb=[look ease, race, become]
+Nouns=[his upright running style,, Gardiner, the final straight and, the finish line, Olympic champion.]
+---------------------
+
+2022-01-02 22:12:45.552  INFO 59261 --- [           main] c.j.j.learning.services.KaveriWinter     : 
+----------------
+Sentence=Handed his country’s flag after winning the race, Gardiner’s celebrations were subdued as he looked shattered and took in his achievement.
+With Marker=<VP>Handed</VP> <NP>his country’s flag</NP> <PP>after</PP> <VP>winning</VP> <NP>the race, Gardiner’s celebrations</NP> <VP>were subdued</VP> <SBAR>as</SBAR> <NP>he</NP> <VP>looked shattered and</VP> <VP>took</VP> <PRT>in</PRT> <NP>his achievement.</NP>
+Main Verb=[, take, win, be subdue, look shatter]
+Nouns=[his country’s flag, the race, Gardiner’s celebrations, he, his achievement.]
+---------------------
+
+2022-01-02 22:12:45.553  INFO 59261 --- [           main] c.j.j.learning.services.KaveriWinter     : 
+----------------
+Sentence=His victory never seriously looked in doubt, as the rest of the field around him tired.
+With Marker=<NP>His victory</NP> <ADVP>never</ADVP> <VP>seriously looked</VP> <NP>in</NP> <ADVP>doubt,</ADVP> <PP>as</PP> <NP>the rest</NP> <PP>of</PP> <NP>the field</NP> <PP>around</PP> <NP>him tired.</NP>
+Main Verb=[look]
+Nouns=[His victory, in, the rest, the field, him tired.]
+---------------------
