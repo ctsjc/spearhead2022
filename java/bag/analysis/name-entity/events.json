@@ -1,0 +1,74 @@
+[
+    {
+        "outcome": "organization-start",
+        "context": [
+            "wc=ac",
+            "w&c=nato,ac",
+            "n1wc=ic",
+            "n1w&c=parliamentary,ic",
+            "n2wc=ic",
+            "n2w&c=assembly,ic",
+            "w=nato",
+            "n1w=parliamentary",
+            "n2w=assembly",
+            "def",
+            "pd=organization-start",
+            "w,nw=NATO,Parliamentary",
+            "wc,nc=ac,ic",
+            "S=begin",
+            "po=other",
+            "pow=other,NATO",
+            "powf=other,ac",
+            "ppo=other"
+        ],
+        "values": null
+    },
+    {
+        "outcome": "organization-cont",
+        "context": [
+            "wc=ic",
+            "w&c=parliamentary,ic",
+            "p1wc=ac",
+            "p1w&c=nato,ac",
+            "n1wc=ic",
+            "n1w&c=assembly,ic",
+            "w=parliamentary",
+            "p1w=nato",
+            "n1w=assembly",
+            "def",
+            "pd=null",
+            "pw,w=NATO,Parliamentary",
+            "pwc,wc=ac,ic",
+            "w,nw=Parliamentary,Assembly",
+            "wc,nc=ic,ic",
+            "po=organization-start",
+            "pow=organization-start,Parliamentary",
+            "powf=organization-start,ic",
+            "ppo=other"
+        ],
+        "values": null
+    },
+    {
+        "outcome": "organization-cont",
+        "context": [
+            "wc=ic",
+            "w&c=assembly,ic",
+            "p1wc=ic",
+            "p1w&c=parliamentary,ic",
+            "p2wc=ac",
+            "p2w&c=nato,ac",
+            "w=assembly",
+            "p1w=parliamentary",
+            "p2w=nato",
+            "def",
+            "pd=null",
+            "pw,w=Parliamentary,Assembly",
+            "pwc,wc=ic,ic",
+            "po=organization-cont",
+            "pow=organization-cont,Assembly",
+            "powf=organization-cont,ic",
+            "ppo=organization-start"
+        ],
+        "values": null
+    }
+]

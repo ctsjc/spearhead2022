@@ -9,6 +9,11 @@
     <div id=sentence{{j}} [innerHTML]="sentence.parse | safeHtml"></div><br>
 </div>
 
+<div *ngFor="let sentence of paragraph ;let j = index">    
+  <div (click)="handleClick()" id=sentence{{j}} [innerHTML]="sentence.parse | safeHtml"></div><br>
+</div>
+
+
 <button on-click="onShow()" >Show</button>
 
 <!-- Text Area where you can modify the content -->

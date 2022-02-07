@@ -1,0 +1,81 @@
+Why Tesla Stock Just Keeps Falling
+What happened
+Between a price target hike from Bank of America and some very positive news on electric car battery ranges, Thursday should have been a great day to own Tesla (NASDAQ:TSLA) stock -- but it's not working out that way.
+Instead of going up, Tesla stock is going down today, falling 4% as of 10:30 a.m. ET and extending a three-day slide that has already cost Tesla investors 12.5% since the start of the New Year.
+So what
+But let's begin with the good news. This morning, analysts at Bank of America raised their price target on Tesla stock to $1,300 a share, as StreetInsider.com reports. On the one hand, the news isn't as good as it could have been, because BofA stuck with its neutral stock rating on Tesla. On the other hand, though, if the banker is right about its price target, Tesla stock could do a whole lot better than "neutral" this year. It could actually gain as much as 24%.
+More unambiguously good news today comes out of Michigan, where battery start-up Our Next Energy, which goes by the nickname ONE, says it has just conducted a road test of a Tesla Model S sedan retrofitted with a prototype ONE battery -- and gotten the car to go 752 miles on a single charge. Even more incredible, ONE's tweaked Tesla accomplished this feat in the ice-cold month of December, when rechargeable battery performance is usually at its weakest. (A third-party tester validating ONE's result "using a vehicle dynamometer," presumably not at outdoor temperatures, was able to achieve an even more incredible 882-mile range for the car).  
+Now what
+Now, that all sounds like fantastic news for Tesla. From an investing angle, one investment bank thinks its stock is worth a lot more than it costs today. From a business angle, another company has independently come up with a battery that -- if produced at commercial volumes -- could dramatically increase the range of Tesla's cars.
+Granted, that might come at the cost of some profit margin for Tesla, if it needs to license ONE's technology to achieve the range improvement, rather than building its own batteries in-house and with partners. But if the upside is eliminating car buyers' "range anxiety" about electric cars once and for all, I suspect it would be worth sacrificing a point or two of profit margin to do that.
+Sadly, Tesla stock isn't reaping any gains from today's positive developments. Instead, its stock is continuing to crumble along with the rest of the growth stocks on fears the Federal Reserve's planned interest rate hikes will kill the bull market in stocks.
+It just goes to show: Sometimes, you can't fight the Fed -- going up or going down.
+
+Tesla and Rivian Shares Feel the Pain as Interest Rates Rise Again
+Growth stock carnage has hit highly valued, fast-growing electric-vehicle shares.
+Fears of rising interest rates are bad news for companies whose earnings are expected to grow rapidly in the future. The recent trading is a brutal reminder that part of the return of any stock — even Tesla (ticker: TSLA) —isn’t determined by a company’s individual fundamentals. Investing math matters.
+Tesla stock has been off 14% over the past four days. The S&P 500 is off about 3%. The Dow Jones Industrial Average has dropped 1%. Rivian Automotive (RIVN) shares are down 19%, although news that Amazon.com (AMZN) will buy electric vans from Stellantis (STLA) has contributed to that decline. Stock in Chinese EV maker NIO (NIO) is down 13% over the past four days.
+The stocks of traditional auto companies have been faring far better. Ford Motor (F) and General Motors (GM) shares are actually up over the past three days, by about 11% and 1%, respectively.
+Investors didn’t suddenly come to believe that Ford and GM were the long-term EV winners — although both companies are trying to win the EV wars. All that happened was the yield on the 10 year Treasury, a key benchmark interest rate, went up roughly 0.3 a percentage point. The yield on the 10-year Treasury was at almost 1.8% Friday, rising almost 0.1%. That rise is pushing the Nasdaq Composite Index, home to many growth stocks, down 0.8%.
+Rates are rising because investors expect the Federal Reserve to boost interest rates to battle inflation in 2022.
+Higher rates hurt growth stock valuations much more than value stock valuations. It’s just math. Growth companies generate most of their cash flow far in the future. Higher interest rates mean future cash isn’t as valuable as it was when rates were lower.
+“You see, when the discount rate rises, the [growth] ‘story’ needs to be discounted to the present. And the further out that story is in the future, the more it gets haircut (sic) by the cost of capital,” wrote Merion Capital Group chief strategist Richard Farr in a Thursday report. “Therefore, companies that have near-term return on capital — cash flow, dividends, return on equity, you know … all the stuff in the book that we ignored for 14 years — matter far more than the [growth] ‘story’ the company has been selling to everyone.”
+It’s a good explanation, but Farr is taking a shot at growth investors, willing to pay high PE ratios for ‘story’ stocks. He’s also taking a shot at the Federal Reserve that has kept rates low for a long time. “For 14 years, the Fed has had policies in place where everything must always go up. It doesn’t matter what your cash flow analysis says when the cost of capital is zero.”
+There is another reason rising rates hurt growth companies more than older, established companies. Growth companies typically need capital — debt for example — to grow. When interest rates rise, debt gets more expensive. That leaves less cash flow for equity investors.
+It’s hard to say when the carnage ends. Selling should stop when rates stop rising. Or when investors become comfortable that interest rates will “take the stairs and not the escalator” as SoFi Technologies (SOFI) head of investment strategy Liz Young put it. That means rates rise in a slow, controlled fashion.
+Rates will take the stairs when inflation data starts to improve. That means all stocks, even EV stocks, are proxies for inflation and inflation expectations, for a little while at least.
+Why Tesla, Rivian, and Lucid Stocks Are All Over the Map Today
+What happened
+Electric car stocks have been pretty volatile so far this year -- but today may take the cake.
+From a 6.5% drop earlier today, shares of Rivian (NASDAQ:RIVN) have recovered all their losses and then some. As of 1:30 p.m. ET, they're actually up about 1.3% from yesterday's close. Tesla (NASDAQ:TSLA) on the other hand might be the stock to beat in electric cars, but it's having a hard time keeping up with Rivian today -- down 3.3% as Rivian rises. And last but not least is Lucid Group (NASDAQ:LCID), tearing up the track with a 9.5% gain.
+So what
+What started all this commotion Friday? It all began with an electric cars report from Morgan Stanley that came out yesterday afternoon.  
+In this report, which was covered by TheFly.com, Morgan Stanley endorsed Rivian as the stock it wants to own "right here. Right now" -- this despite the fact that Chief Financial Officer Claire McDonough just admitted that Rivian has no intention of earning a profit right now, but rather wants "to prioritize our ability to rapidly bring new vehicles to market versus having that path to prioritize profitability," according to The Wall Street Journal. In furtherance of that goal, McDonough promised to spend $5 billion building a second factory, in Georgia, which could produce as many as 400,000 electric trucks a year once it begins operations in 2024.   
+Laying out $5 billion on a new factory is going to push profitability some ways down the road for Rivian, but Morgan Stanley doesn't seem to mind that. As the analyst sees it: "the risks to supply to far outweigh the risks to demand. We are confident Rivian will sell every vehicle they can make... if they can make them." And if Rivian wants to catch Tesla, argues the analyst, it's necessary to spend whatever cash is needed "to scale EV manufacturing."  
+Now what
+This explains why Morgan Stanley says it is "excited" about Rivian stock even though, according to analyst estimates collected by S&P Global Market Intelligence, basically no one on Wall Street thinks Rivian will earn even so much as a pro forma profit before 2026, and no profits according to generally accepted accounting principles (GAAP) before 2027.
+But what does Morgan Stanley's note imply for Tesla (a loser today) and Lucid (the day's big winner)?
+In the case of Tesla, if Rivian succeeds in its goal of building 400,000 electric trucks a year in Georgia, and another 150,000 at its existing plant in Illinois, then Rivian is an object that may be closer than it appears in Tesla's rearview mirror. Although Morgan Stanley warns that Rivian faces an "extremely difficult path to ramping EV manufacturing," the analyst says Rivian has "the product, the management, the capability, capitalization and strategic support" to catch up to Tesla -- so much so that MS considers Rivian its No. 2 pick among automotive stocks this year. (No. 1, by the way, isn't even Tesla -- it's Ferrari.)
+Finally, what about Lucid?
+Lucid stock was kind of left by the wayside in the analyst's report. And yet, investors today may be figuring that if Rivian is worth betting on despite the fact that it won't be profitable before 2027, then Lucid must look pretty attractive as well. After all, according to automotive analysts, Lucid is scheduled to turn pro forma profitable at least a year before Rivian does, in 2025 rather than 2026.
+If the buying opportunity on Rivian is as good as Morgan Stanley thinks, then fast-growing Lucid could be an even better bet.
+Why Tesla Stock Is Toast Today
+What happened
+Tesla (NASDAQ:TSLA) took a tumble along with the rest of the tech stock market this afternoon, succumbing to interest rate fears after the U.S. Federal Reserve made public its plans to withdraw support from the high-flying U.S. stock market.
+As of 3:25 p.m. ET, that decision has cost Tesla stock 5.5%.
+So what
+CNBC has the story: From just-published minutes from the Fed's December meeting, it's apparent that officials "are ready to dial back policy help aggressively," in particular, by first slowing then reversing bond purchases (i.e., selling off bonds already purchased) "in the coming months."  
+The Fed's goal isn't to engineer a stock market crash (although that may be the effect) but rather to dry up excess liquidity that is accelerating inflation in the economy and to raise interest rates in an attempt to dial back that inflation.
+As previously reported, the Fed also plans to raise targeted interest rates three times in 2022 and then another three times in 2023 -- and then another couple more times in 2024. Number of times multiplied by one quarter point per each raise works out to interest rates two years from now that could sit two full percentage points above the zero-to-0.25 percent rate that is targeted today.  
+Now what
+Interest rates could thus rise 10 times in three years -- or just 2 percentage points -- depending on how you look at the numbers. Right now, investors are looking at them the first way, and they're downright scared of what this might do to the stock market.
+They're scared enough, indeed, that they're ignoring the fact that three separate analysts -- Barclays, RBC Capital, and Mizuho -- raised their target prices on Tesla stock today to $325, $1,005, and $1,300, respectively, according to a report from TheFly.com. Instead, they're heeding the advice that worked so well for growth stock investors in 2021: Don't fight the Fed.
+Of course, last year that advice meant "go ahead and buy stocks regardless of how insanely overvalued they look." Today, in an environment where the Fed is not implicitly promising to ensure that stock prices only go up, that same advice has a different meaning entirely.
+Take a closer look at valuation, and if a stock costs 330 times earnings -- as Tesla does -- then sell.
+Tesla Stock Is Falling Again. Why Shares Are Giving Back Big Delivery Gains.
+Tesla opened the year with strong fourth-quarter delivery numbers, sending shares up 13.5% on the first trading day of the new year.
+Wall Street lauded the results. Analysts boosted their earnings estimates and stock price targets for Tesla (ticker: TSA).
+So why, a few days later, is Tesla stock right back where it started the year?
+The answer doesn’t have anything to do with Elon Musk or company fundamentals. The reason for the recent drop? Beta.
+Beta is a stock-market term used to describe risk. It measures how a stock price changes compared with the overall market. A high beta–anything greater than 1–means a stock’s daily price swings are more volatile than the broader market. A beta of less than 1 means daily price movers are more muted.
+A stock with a beta of less than 1 can be considered less risky. It’s harder to lose a lot of money quickly in a less-volatile stock.
+Tesla’s beta is quite high at about 2. What’s more, that’s relative to the S&P 500 and Nasdaq Composite index.
+A beta of 2 means that if the S&P 500 drops 1.9%, as it did Wednesday, the move in Tesla stock should be about 3.8%, or two times 1.9%. But Tesla shares dropped 5.3% Wednesday. That’s a little worse, but the beta can be relative to both the S&P 500 and the Nasdaq. Those indexes combined fell 2.6%, almost half of Tesla’s drop. Beta explains what happened to Tesla on Wednesday pretty well.
+All this means nothing specific to Tesla caused shares to fall over the past couple of days. The decline is correlated to the drop in the overall market.
+Stocks are down because investors fear the Federal Reserve’s pending interest rate hikes. Rising rates hurt valuations of fast-growing tech stocks, such as Tesla, more than others. But the beta explanation might comfort Tesla bulls wondering if declines are presaging something wrong with the company.
+Tesla shares were down again Thursday, falling 2.3% to about $1,063. That’s up a little from their Dec. 31 close of $1,056.78.
+The S&P 500 and Nasdaq are flat, recovering from some losses earlier in Thursday trading.
+The Dow Jones Industrial Average, home to many older, slower growth stocks, is off 0.3%, but it’s been outperforming the other indexes year to date.
+Rising interest rates aren’t as big a deal for stocks in the Dow, which explains its recent outperformance over the other indexes. So far in 2022, the Dow is down about 0.1%. The S&P 500 has dropped 1.7% and the Nasdaq is off 3.4%.
+
+Stocks making the biggest moves in the premarket: Tesla, McDonald’s, Nio and more
+
+Tesla (TSLA) – Tesla surged 7.4% in the premarket following news that it delivered 308,600 vehicles during the fourth quarter, well above the consensus estimate of 263,026. The quarter’s deliveries were 70% above year-ago levels and about 30% higher than the prior quarter.
+
+Tesla Briefly Led the Nasdaq to New Heights. Here's Why It Didn't Last
+On Monday, a sea of green glossed over the U.S. stock market as the S&P 500 (SNPINDEX:^GSPC) set a new all-time high. Tesla (NASDAQ:TSLA) surged over 14%, and waves of euphoria overpowered fears of slowing growth and a prolonged pandemic. Wednesday brought a very different tune, as the Nasdaq Composite (NASDAQINDEX:^IXIC) suffered its worst single-day drop in months and turned negative for the year after the U.S. Federal Reserve indicated interest rates could rise faster than expected.
+Here's the latest on Tesla, electric vehicles (EVs), and the pros and cons that could impact the industry next.
+Daniel Foelber: With a market cap of $1.2 trillion as of Monday's close, Tesla stock can really move both the S&P 500 and the Nasdaq. In fact, the S&P 500 has a market cap of roughly $40.4 trillion and the Nasdaq has a market cap of around $25.6 trillion, meaning that Tesla's $144 billion market cap gain on Monday contributed around a 0.36% return to the S&P 500 and a 0.56% return to the Nasdaq. The fact that a single company can move two of the largest and most followed indexes by that much in a single day is a testament to how large Tesla has become.
+
+Tesla leads 10 most-traded retail stocks in 2021 according to Nasdaq
+

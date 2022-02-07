@@ -14,6 +14,7 @@ import java.io.InputStream;
 import java.util.stream.Stream;
 
 @Slf4j
+@Service
 public class PoSEntity3 {
     POSTaggerME posTagger = null;
 

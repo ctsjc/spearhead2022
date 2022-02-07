@@ -1,0 +1,22 @@
+<START:who>NP1<END>, through <START:how>NP2<END>, operates <START:what>NP3<END> from <START:where>NP6<END>
+With <START:>NP1<END> in <START:>NP2<END>, <START:>NP3<END> has <START:>NP4<END>
+<START:>NP1<END> are located in <START:>NP2<END>, contributing to <START:>NP3<END>.
+<START:>NP1<END> allows <START:>NP2<END> to <START:>VP1<END> <START:>NP3<END>.
+As discussed under <START:>NP1<END>, <START:>NP2<END> is <START:>NP3<END>
+<START:>NP1<END>, as reported to <START:>NP2<END>, can be found in <START:>NP3<END>.
+<START:>NP1<END> transports <START:>NP2<END> through <START:>NP3<END>.
+With <START:>NP1<END>, <START:>NP2<END> has <START:>NP3<END>. 
+<START:>NP1<END>, through <START:>NP2<END>, operates <START:>NP3<END>, with <START:>NP4<END> at <START:>NP5<END>. 
+
+
+
+
+
+
+
+
+
+
+
+
+

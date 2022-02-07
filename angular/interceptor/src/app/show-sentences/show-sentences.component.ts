@@ -31,6 +31,15 @@ export class ShowSentencesComponent implements OnInit {
       });
   }
 
+  handleClick() {
+    let selection = window.getSelection();
+    let doc = window.document
+    const start1 = window?.getSelection()?.getRangeAt(0)?.startOffset;
+    const end1 = window?.getSelection()?.getRangeAt(0).endOffset;
+    console.log((''+(doc?.getElementById('sentence0')?.innerText)).
+    substring(start1?start1:0 ,end1));
+  
+  }
 
   buildUI(paragraph: SentenceResponse[]): SentenceResponse[] {
     let tags: string[] = ['<NP>', '<VP>', '<PP>'];
@@ -104,7 +113,7 @@ export class ShowSentencesComponent implements OnInit {
         return sentence;
       });
     }
-
+    
     /*  Adds mandatory Start tag before Name entity. */
     function addFirstCopyMarker(): SentenceResponse[] {
       return paragraph.map(sentence => {
@@ -188,8 +197,18 @@ export class ShowSentencesComponent implements OnInit {
   onAdd() {
     this.staticResponse= this.staticResponse.replace(/(\r\n|\n|\r|\t|(  ))/gm,"");
     console.log(this.staticResponse);
-    let paragraph=JSON.parse(this.staticResponse);
+    let paragraph=[];
+    try{
+      paragraph=JSON.parse(this.staticResponse);
+    }catch(err){
+      //SentenceResponse
+      paragraph = [{
+        parse: this.staticResponse
+      }];
+    }
     console.log(paragraph);
     this.paragraph = this.buildUI(paragraph);
   }
+
+  
 }//end of Component

@@ -1,0 +1,87 @@
+[
+  {
+    "sentence": "The Company transports people and cargo through its mainline and regional operations.",
+    "main-verb": "transport",
+    "sequence": "",
+    "questionnaire": {
+      "what": "people and cargo  ",
+      "how": "through its mainline and regional operations.",
+      "who": "The company"
+    }
+  },
+  {
+    "sentence": "With key global aviation rights in North America, Asia-Pacific, Europe, Middle East and Latin America, UAL has the world’s most comprehensive global route network. ",
+    "main-verb": "has",
+    "sequence": "With NP1 in NP2, NP3 has NP4 ",
+    "questionnaire": {
+      "what": "the world’s most comprehensive global route network. ",
+      "how": "With key global aviation rights in North America, Asia-Pacific, Europe, MiddleEast and Latin America ",
+      
+    }
+  },
+  {
+    "sentence": "UAL, through United and its regional carriers, operates more than 4,500 flights a day to 339 airports across five continents from the Company’s hubs at Newark Liberty International Airport (“Newark”), Chicago O’Hare International Airport (“Chicago O’Hare”), Denver International Airport (“Denver”), George Bush Intercontinental Airport (“Houston Bush”), Los Angeles International Airport (“LAX”), A.B. Won Pat International Airport (“Guam”), San Francisco International Airport (“SFO”) and Washington Dulles International Airport (“Washington Dulles”). ",
+    "main-verb": "operates",
+    "sequence": "NP1, through NP2, operates NP3 from NP6 ",
+    "questionnaire": {
+      "what": " more than 4,500 flights a day to 339 airports across five continents ",
+      "how": "<through>United and its regional carriers  ",
+      "who": "UAL",
+      "where": " from the Company’s hubs at Newark Liberty International Airport (“Newark”), Chicago O’Hare International Airport (“Chicago O’Hare”), Denver International Airport (“Denver”), George Bush Intercontinental Airport (“Houston Bush”), Los Angeles International Airport (“LAX”), A.B. Won Pat International Airport (“Guam”), San Francisco International Airport (“SFO”) and Washington Dulles International Airport (“Washington Dulles”). "
+    }
+  },
+  {
+    "sentence": "All of the Company’s domestic hubs are located in large business and population centers, contributing to a large amount of “origin and destination” traffic. ",
+    "main-verb": "located",
+    "sequence": "NP1 are located in NP2, contributing to NP3.  ",
+    "questionnaire": {
+      "what": "All of the Company’s domestic hubs  ",
+      "where": "large business and population centers ",
+      "effect":"contributing to a large amount of “origin and destination” traffic "
+      
+    }
+  },
+  {
+    "sentence": "The hub and spoke system allows us to transport passengers between a large number of destinations with substantially more frequent service than if each route were served directly.",
+    "main-verb": "allows",
+    "sequence": "NP1 allows NP2 to VP1 NP3. ",
+    "questionnaire": {
+      "how": "The hub and spoke system  ",
+      "to whome": "us",
+      "what":" to transport passengers between a large number of destinations with substantially more frequent service than if each route were served directly.  "
+      
+    }
+  },
+  {
+    "sentence": "The hub system also allows us to add service to a new destination from a large number of cities using only one or a limited number of aircraft.",
+    "main-verb": "allows",
+    "sequence": "",
+    "questionnaire": {
+      "what is the reason": "The hub system also  ",
+      "to whome": "us",
+      "what is allowed": "to add service to a new destination from a large number of cities using only one or a limited number of aircraft. "
+      
+    }
+  },
+  {
+    "sentence": "As discussed under Alliances below, United is a member of Star Alliance, the world’s largest alliance network.",
+    "main-verb": "discussed",
+    "sequence": "As discussed under np1, np2 is np3  ",
+    "questionnaire": {
+      "what": "United is a member of Star Alliance, the world’s largest alliance network.  ",
+      "where": "under Alliances below ",
+      
+    }
+  },
+  {
+    "sentence": "Financial information on the Company’s operating revenues by geographic regions, as reported to the U.S. Department of Transportation (the “DOT”), can be found in Note 17 to the financial statements included in Part II, Item 8 of this report.",
+    "main-verb": "reported",
+    "sequence": "np1, as reported to np2, can be found in np3. ",
+    "questionnaire": {
+      "what": "Financial information on the Company’s operating revenues by geographic regions, as  ",
+      "To whom reported ": "to the U.S. Department of Transportation (the “DOT”),  ",
+      "Where can be found ": "can be found in Note 17 to the financial statements included in Part II, Item 8 of this report."
+      
+    }
+  }
+]

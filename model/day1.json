@@ -1,0 +1,7 @@
+[
+    {
+        "Sentence": "The 25-year-old ran a season best time of 43.85 to finish ahead of Colombia's Anthony Jose Zambrano and London 2012 winner Kirani James.'",
+        "parse":"<START:who>The 25-year-old<END> ran <START:TimeTaken>a season best time of 43.85<END> <START:why>to finish <END> ahead of <START:whom>Colombia's Anthony Jose Zambrano and London 2012 winner Kirani James.<END>",
+        "m":" <START:who>NP<END> ran <START:TimeTaken>TIME<END> <START:why>to finish<END> ahead of <START:whom>NP<END>"
+    }
+]

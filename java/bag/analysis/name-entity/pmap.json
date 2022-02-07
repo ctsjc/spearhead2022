@@ -1,0 +1,1676 @@
+{
+    "S=begin": {
+        "parameters": [
+            0.22515379703030505,
+            0.39048793301392803,
+            0.21544810155021596,
+            0.034865682801083035,
+            -0.19691862781699765
+        ],
+        "outcomes": [
+            0,
+            2,
+            4,
+            6,
+            8
+        ]
+    },
+    "def": {
+        "parameters": [
+            0.008233957617661195,
+            -0.10631749545373204,
+            0.21666784906980116,
+            0.052884312348669874,
+            -0.012112522552472953,
+            -0.11493973406481775,
+            -0.2635305230287391,
+            -0.28030198412470353,
+            -0.07959081018304333
+        ],
+        "outcomes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "n1w&c=.,other": {
+        "parameters": [
+            0.28346986927783746,
+            0.23078762586728538
+        ],
+        "outcomes": [
+            2,
+            3
+        ]
+    },
+    "n1w&c=<end>;,other": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "n1w&c=assembly,ic": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "n1w&c=fogh,ic": {
+        "parameters": [
+            0.5932143150465986
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "n1w&c=obama,ic": {
+        "parameters": [
+            0.8500704221845828
+        ],
+        "outcomes": [
+            6
+        ]
+    },
+    "n1w&c=parliamentary,ic": {
+        "parameters": [
+            0.3496716441253644
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "n1w&c=rasmussen,ic": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "n1w&c=s,sc": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "n1w&c=states,ic": {
+        "parameters": [
+            0.558187440426594
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "n1w=.": {
+        "parameters": [
+            0.28346986927783746,
+            0.23078762586728538
+        ],
+        "outcomes": [
+            2,
+            3
+        ]
+    },
+    "n1w=<end>;": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "n1w=assembly": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "n1w=fogh": {
+        "parameters": [
+            0.5932143150465986
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "n1w=obama": {
+        "parameters": [
+            0.8500704221845828
+        ],
+        "outcomes": [
+            6
+        ]
+    },
+    "n1w=parliamentary": {
+        "parameters": [
+            0.3496716441253644
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "n1w=rasmussen": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "n1w=s": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "n1w=states": {
+        "parameters": [
+            0.558187440426594
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "n1wc=ic": {
+        "parameters": [
+            -0.007862964171074089,
+            0.1524740982231354,
+            -0.14291269180643193,
+            0.15928805777758923,
+            0.17970731541891882,
+            0.44293680227120324
+        ],
+        "outcomes": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+        ]
+    },
+    "n1wc=other": {
+        "parameters": [
+            0.11864395565130202,
+            0.15342955680676237,
+            0.44669003444887584
+        ],
+        "outcomes": [
+            2,
+            3,
+            8
+        ]
+    },
+    "n1wc=sc": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "n2w&c=.,other": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "n2w&c=assembly,ic": {
+        "parameters": [
+            0.3496716441253644
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "n2w&c=rasmussen,ic": {
+        "parameters": [
+            0.5932143150465986
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "n2w&c=s,sc": {
+        "parameters": [
+            0.40548743007336396
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "n2w=.": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "n2w=assembly": {
+        "parameters": [
+            0.3496716441253644
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "n2w=rasmussen": {
+        "parameters": [
+            0.5932143150465986
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "n2w=s": {
+        "parameters": [
+            0.40548743007336396
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "n2wc=ic": {
+        "parameters": [
+            0.2506684675410687,
+            0.4976114558419399
+        ],
+        "outcomes": [
+            0,
+            4
+        ]
+    },
+    "n2wc=other": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "n2wc=sc": {
+        "parameters": [
+            0.40548743007336396
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "p1w&c=.,other": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1w&c=2010,4d": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "p1w&c=anders,ic": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "p1w&c=barack,ic": {
+        "parameters": [
+            0.6767885155428971
+        ],
+        "outcomes": [
+            7
+        ]
+    },
+    "p1w&c=fogh,ic": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "p1w&c=nato,ac": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "p1w&c=parliamentary,ic": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "p1w&c=s,sc": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1w&c=u,sc": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1w&c=united,ic": {
+        "parameters": [
+            0.6495314507980816
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1w=.": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1w=2010": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "p1w=anders": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "p1w=barack": {
+        "parameters": [
+            0.6767885155428971
+        ],
+        "outcomes": [
+            7
+        ]
+    },
+    "p1w=fogh": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "p1w=nato": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "p1w=parliamentary": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "p1w=s": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1w=u": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1w=united": {
+        "parameters": [
+            0.6495314507980816
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1wc=4d": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "p1wc=ac": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "p1wc=ic": {
+        "parameters": [
+            0.17563917368896037,
+            0.29309098236489445,
+            0.3334642070716404,
+            0.36647564800149207
+        ],
+        "outcomes": [
+            1,
+            3,
+            5,
+            7
+        ]
+    },
+    "p1wc=other": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p1wc=sc": {
+        "parameters": [
+            0.35187374092037144
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p2w&c=.,other": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p2w&c=anders,ic": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "p2w&c=nato,ac": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "p2w&c=u,sc": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p2w=.": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p2w=anders": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "p2w=nato": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "p2w=u": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p2wc=ac": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "p2wc=ic": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "p2wc=other": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "p2wc=sc": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pd=location-start": {
+        "parameters": [
+            0.7115690546327177
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "pd=null": {
+        "parameters": [
+            -0.021763734695415773,
+            -0.04264292572940334,
+            0.21662773914334826,
+            0.09517570877974801,
+            -0.5658417009580748,
+            -0.03811219330704587,
+            -0.14451030353632335,
+            -0.1802914842418142,
+            -0.0042491766683063524
+        ],
+        "outcomes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "pd=organization-start": {
+        "parameters": [
+            0.3496716441253644
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "pd=person-cont": {
+        "parameters": [
+            1.1159757550696245
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "po=location-cont": {
+        "parameters": [
+            0.3710369654128059
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "po=location-start": {
+        "parameters": [
+            0.46597105860935495
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "po=organization-cont": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "po=organization-start": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "po=other": {
+        "parameters": [
+            0.19379448751882136,
+            0.3664844492570333,
+            0.18806319476368902,
+            -0.001639810299162321,
+            0.11112004589279778
+        ],
+        "outcomes": [
+            0,
+            2,
+            4,
+            6,
+            8
+        ]
+    },
+    "po=person-cont": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "po=person-start": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "po=person.president-start": {
+        "parameters": [
+            0.6767885155428971
+        ],
+        "outcomes": [
+            7
+        ]
+    },
+    "pow=location-cont,.": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pow=location-cont,S": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pow=location-start,.": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pow=location-start,States": {
+        "parameters": [
+            0.6495314507980816
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pow=organization-cont,Assembly": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "pow=organization-start,Parliamentary": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "pow=other,2010": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "pow=other,<END>;": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "pow=other,Afghanistan": {
+        "parameters": [
+            0.7637291950522832
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "pow=other,Anders": {
+        "parameters": [
+            0.5932143150465986
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "pow=other,Barack": {
+        "parameters": [
+            0.8500704221845828
+        ],
+        "outcomes": [
+            6
+        ]
+    },
+    "pow=other,Britain": {
+        "parameters": [
+            0.7938317723586719
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "pow=other,Edinburgh": {
+        "parameters": [
+            0.7938317723586719
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "pow=other,NATO": {
+        "parameters": [
+            0.7706788738672162
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "pow=other,Rasmussen": {
+        "parameters": [
+            1.1159757550696245
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "pow=other,U": {
+        "parameters": [
+            0.40548743007336396
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "pow=other,United": {
+        "parameters": [
+            0.558187440426594
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "pow=person-cont,Rasmussen": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "pow=person-start,Fogh": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "pow=person.president-start,Obama": {
+        "parameters": [
+            0.6767885155428971
+        ],
+        "outcomes": [
+            7
+        ]
+    },
+    "powf=location-cont,other": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "powf=location-cont,sc": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "powf=location-start,ic": {
+        "parameters": [
+            0.6495314507980816
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "powf=location-start,other": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "powf=organization-cont,ic": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "powf=organization-start,ic": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "powf=other,4d": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "powf=other,ac": {
+        "parameters": [
+            0.7706788738672162
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "powf=other,ic": {
+        "parameters": [
+            0.5253544451382726,
+            0.3625212276329647,
+            0.2099590351950754
+        ],
+        "outcomes": [
+            2,
+            4,
+            6
+        ]
+    },
+    "powf=other,other": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "powf=other,sc": {
+        "parameters": [
+            0.40548743007336396
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "powf=person-cont,ic": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "powf=person-start,ic": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "powf=person.president-start,ic": {
+        "parameters": [
+            0.6767885155428971
+        ],
+        "outcomes": [
+            7
+        ]
+    },
+    "ppo=location-cont": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "ppo=location-start": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "ppo=organization-start": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "ppo=other": {
+        "parameters": [
+            0.07544934267149632,
+            -0.40254762942567424,
+            0.2716075606506476,
+            -0.12863335504836185,
+            0.07171402566126914,
+            -0.4193133555760461,
+            -0.17267361513599255,
+            -0.17516509596791727,
+            -0.005724295459177742
+        ],
+        "outcomes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "ppo=person-start": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "pw,w=.,S": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pw,w=2010,<END>;": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "pw,w=Anders,Fogh": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "pw,w=Barack,Obama": {
+        "parameters": [
+            0.6767885155428971
+        ],
+        "outcomes": [
+            7
+        ]
+    },
+    "pw,w=Fogh,Rasmussen": {
+        "parameters": [
+            0.48815072893952083
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "pw,w=NATO,Parliamentary": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "pw,w=Parliamentary,Assembly": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "pw,w=S,.": {
+        "parameters": [
+            0.3994425061982639
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pw,w=U,.": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pw,w=United,States": {
+        "parameters": [
+            0.6495314507980816
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pwc,wc=4d,other": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "pwc,wc=ac,ic": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "pwc,wc=ic,ic": {
+        "parameters": [
+            0.17563917368896037,
+            0.29309098236489445,
+            0.3334642070716404,
+            0.36647564800149207
+        ],
+        "outcomes": [
+            1,
+            3,
+            5,
+            7
+        ]
+    },
+    "pwc,wc=other,sc": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "pwc,wc=sc,other": {
+        "parameters": [
+            0.35187374092037144
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w&c=.,other": {
+        "parameters": [
+            0.35187374092037144
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w&c=2010,4d": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "w&c=<end>;,other": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "w&c=afghanistan,ic": {
+        "parameters": [
+            0.7637291950522832
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w&c=anders,ic": {
+        "parameters": [
+            0.5932143150465986
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "w&c=assembly,ic": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "w&c=barack,ic": {
+        "parameters": [
+            0.8500704221845828
+        ],
+        "outcomes": [
+            6
+        ]
+    },
+    "w&c=britain,ic": {
+        "parameters": [
+            0.7938317723586719
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w&c=edinburgh,ic": {
+        "parameters": [
+            0.7938317723586719
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w&c=fogh,ic": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "w&c=nato,ac": {
+        "parameters": [
+            0.7706788738672162
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "w&c=obama,ic": {
+        "parameters": [
+            0.6767885155428971
+        ],
+        "outcomes": [
+            7
+        ]
+    },
+    "w&c=parliamentary,ic": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "w&c=rasmussen,ic": {
+        "parameters": [
+            0.9417144623707504,
+            0.3473314306489706
+        ],
+        "outcomes": [
+            4,
+            5
+        ]
+    },
+    "w&c=s,sc": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w&c=states,ic": {
+        "parameters": [
+            0.6495314507980816
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w&c=u,sc": {
+        "parameters": [
+            0.40548743007336396
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w&c=united,ic": {
+        "parameters": [
+            0.558187440426594
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w,nw=.,S": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w,nw=2010,<END>;": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "w,nw=Anders,Fogh": {
+        "parameters": [
+            0.5932143150465986
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "w,nw=Barack,Obama": {
+        "parameters": [
+            0.8500704221845828
+        ],
+        "outcomes": [
+            6
+        ]
+    },
+    "w,nw=Fogh,Rasmussen": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "w,nw=NATO,Parliamentary": {
+        "parameters": [
+            0.3496716441253644
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "w,nw=Parliamentary,Assembly": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "w,nw=S,.": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w,nw=U,.": {
+        "parameters": [
+            0.40548743007336396
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w,nw=United,States": {
+        "parameters": [
+            0.558187440426594
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w=.": {
+        "parameters": [
+            0.35187374092037144
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w=2010": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "w=<end>;": {
+        "parameters": [
+            0.5652700292239371
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "w=afghanistan": {
+        "parameters": [
+            0.7637291950522832
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w=anders": {
+        "parameters": [
+            0.5932143150465986
+        ],
+        "outcomes": [
+            4
+        ]
+    },
+    "w=assembly": {
+        "parameters": [
+            0.47308223173249175
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "w=barack": {
+        "parameters": [
+            0.8500704221845828
+        ],
+        "outcomes": [
+            6
+        ]
+    },
+    "w=britain": {
+        "parameters": [
+            0.7938317723586719
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w=edinburgh": {
+        "parameters": [
+            0.7938317723586719
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w=fogh": {
+        "parameters": [
+            0.4909151382912556
+        ],
+        "outcomes": [
+            5
+        ]
+    },
+    "w=nato": {
+        "parameters": [
+            0.7706788738672162
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "w=obama": {
+        "parameters": [
+            0.6767885155428971
+        ],
+        "outcomes": [
+            7
+        ]
+    },
+    "w=parliamentary": {
+        "parameters": [
+            0.46210304717094747
+        ],
+        "outcomes": [
+            1
+        ]
+    },
+    "w=rasmussen": {
+        "parameters": [
+            0.9417144623707504,
+            0.3473314306489706
+        ],
+        "outcomes": [
+            4,
+            5
+        ]
+    },
+    "w=s": {
+        "parameters": [
+            0.34352143899569887
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w=states": {
+        "parameters": [
+            0.6495314507980816
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "w=u": {
+        "parameters": [
+            0.40548743007336396
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "w=united": {
+        "parameters": [
+            0.558187440426594
+        ],
+        "outcomes": [
+            2
+        ]
+    },
+    "wc,nc=4d,other": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "wc,nc=ac,ic": {
+        "parameters": [
+            0.3496716441253644
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "wc,nc=ic,ic": {
+        "parameters": [
+            0.18372301968091106,
+            -0.09144541062496352,
+            0.21206945336570518,
+            0.21168462551162848,
+            0.48412556582132293
+        ],
+        "outcomes": [
+            1,
+            2,
+            4,
+            5,
+            6
+        ]
+    },
+    "wc,nc=other,sc": {
+        "parameters": [
+            0.30630761015896857
+        ],
+        "outcomes": [
+            3
+        ]
+    },
+    "wc,nc=sc,other": {
+        "parameters": [
+            0.28346986927783746,
+            0.23078762586728538
+        ],
+        "outcomes": [
+            2,
+            3
+        ]
+    },
+    "wc=4d": {
+        "parameters": [
+            0.5980534632764943
+        ],
+        "outcomes": [
+            8
+        ]
+    },
+    "wc=ac": {
+        "parameters": [
+            0.7706788738672162
+        ],
+        "outcomes": [
+            0
+        ]
+    },
+    "wc=ic": {
+        "parameters": [
+            0.03879165909393647,
+            0.3756891150892145,
+            -0.2340721877432238,
+            0.17484528509071554,
+            0.028990417659918045,
+            -0.028783562665302676,
+            -0.06124951102780206
+        ],
+        "outcomes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "wc=other": {
+        "parameters": [
+            0.2960533857501337,
+            0.40814204151673594
+        ],
+        "outcomes": [
+            3,
+            8
+        ]
+    },
+    "wc=sc": {
+        "parameters": [
+            0.28346986927783746,
+            0.23078762586728538
+        ],
+        "outcomes": [
+            2,
+            3
+        ]
+    }
+}
