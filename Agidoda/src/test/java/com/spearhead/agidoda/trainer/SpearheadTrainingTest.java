@@ -33,7 +33,7 @@ class SpearheadTrainingTest {
 
             NameFinderME nameFinder = new NameFinderME(model);
 
-            String[] sentence = "NATO United States Barack Obama was Trump".split("\\s+");
+            String[] sentence = "With NP1 in NP2, NP3 has NP4".split("\\s+");
             Span[] names = nameFinder.find(sentence);
             System.out.println("Jay Shree Ram " + names.length);
             Stream.of(names)

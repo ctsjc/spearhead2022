@@ -1,12 +1,7 @@
-<START:organization> NATO <END>
-<START:organization> NATO Parliamentary Assembly <END>
-<START:location> United States <END>
-<START:location> Edinburgh <END>
-<START:location> Britain <END>
-<START:location> Afghanistan <END>
-<START:location> U . S . <END>
-<START:location> Afghanistan <END>
-<START:person> Anders Fogh Rasmussen <END>
-<START:person.president> Barack Obama <END>
-<START:person> Rasmussen <END>
-<START:date> 2010 <END>;
+<START:who> NP1 <END> transports <START:what> NP2 <END> through <START:how> NP3 <END>
+<START:who> NP1, <END> through <START:how> NP2, <END> operates <START:what> NP3 <END> from <START:where> NP6 <END>
+With <START:how> NP1 in NP2, <END> <START:who> NP3 <END> has <START:what> NP4 <END>
+<START:what> NP1 <END> are located in <START:where> NP2, <END> contributing to <START:effect> NP3 <END>.
+<START:who> NP1 <END> allows <START:whom> NP2 <END> to <START:what> VP1 NP3 <END>.
+As discussed under <START:whereisdiscussed> NP1, <END> <START:whatisdiscussed> NP2 is NP3 <END>
+<START:What> NP1, <END> as reported to <START:to_whom_reported> NP2, <END> can be found in <START:where_is_reported> NP3 <END>.

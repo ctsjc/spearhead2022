@@ -2,26 +2,24 @@ package com.spearhead.agidoda.trainer;
 
 import lombok.extern.slf4j.Slf4j;
 import opennlp.tools.namefind.*;
-import opennlp.tools.util.*;
+import opennlp.tools.util.InputStreamFactory;
+import opennlp.tools.util.ObjectStream;
+import opennlp.tools.util.PlainTextByLineStream;
+import opennlp.tools.util.TrainingParameters;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
-import java.nio.charset.Charset;
 import java.util.Collections;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+
 @Slf4j
 @Service
 public class SpearheadTraining {
 
-    String modelPath="/train/unitedModel.txt";
+    String modelPath = "/train/unitedModel.txt";
 
     NameFinderME nameFinder = setupModel();
 
-    private void test(String[] sentence) {
 
-    }
 
     private NameFinderME setupModel() {
         try {
@@ -35,46 +33,29 @@ public class SpearheadTraining {
                     TokenNameFinderFactory.create(null, null, Collections.emptyMap(), new BioCodec()));
 
 
-
-
             // Write the file
-            BufferedOutputStream modelOut=null;
+            BufferedOutputStream modelOut = null;
             try {
                 File modelFile = new File("unitedModel.bin");
 
-                if(!modelFile.exists()) {
+                if (!modelFile.exists()) {
                     modelFile.createNewFile();
                 }
                 modelOut = new BufferedOutputStream(new FileOutputStream(modelFile));
                 nameFinderModel.serialize(modelOut);
-            } catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
-            }finally {
+            } finally {
                 if (modelOut != null)
                     modelOut.close();
             }
 
             nameFinder = new NameFinderME(nameFinderModel);
-
-            test(nameFinder);
             return nameFinder;
         } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
-    }
-
-    private void test(NameFinderME nameFinder) {
-        String[] sentence = { "NATO United States Barack Obama was Trump"};
-        Span[] names = nameFinder.find(sentence);
-        System.out.println("Jay Shree Ram " + names.length);
-        Stream.of(names)
-                .forEach(span -> {
-                    String named = IntStream.range(span.getStart(), span.getEnd())
-                            .mapToObj(i -> sentence[i])
-                            .collect(Collectors.joining(" "));
-                    log.info("find type: " + span.getType() + ",name: " + named + "\t" + (span.getProb() * 100));
-                });
     }
 
     private TrainingParameters setTrainingParam() {
@@ -96,6 +77,6 @@ public class SpearheadTraining {
                 }, "UTF-8"));
     }
 
-    void execute()  {
+    void execute() {
     }
 }
