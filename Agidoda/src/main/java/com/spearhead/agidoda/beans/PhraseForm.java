@@ -44,7 +44,6 @@ public class PhraseForm {
         while (i < this.phrases.size() - 1) {
             Map<String, String> entry1 = this.phrases.get(i);
             Map<String, String> entry2 = this.phrases.get(i + 1);
-            log.info("\nentry1 {}\nentry2 {}",entry1,entry2);
             if (entry1.keySet().equals(entry2.keySet())) {
                 String rkey = (String) this.phrases.get(i).keySet().toArray()[0];
                 String value1 = this.phrases.get(i).get(rkey);

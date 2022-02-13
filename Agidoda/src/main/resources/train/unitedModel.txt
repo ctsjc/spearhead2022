@@ -1,6 +1,6 @@
 <START:who> NP0 <END> transports <START:what> NP2 <END> through PP4 <START:how> NP5 <END>
 <START:who> NP0, <END> through <START:how> NP2, <END> operates <START:what> NP5 <END> from <START:where> NP7 <END>
-With <START:how> NP1 <END> in <START:where> NP3 <END> , <START:who> NP5 <END> has <START:what> NP7 <END>
+With <START:how> NP1 <END> in <START:where> NP2 <END> , <START:who> NP3 <END> has <START:what> NP4 <END>
 <START:what> NP1 <END> are located in <START:where> NP5, <END> contributing to <START:effect> NP8 <END>.
 <START:who> NP1 <END> allows <START:whom> NP2 <END> to <START:what> VP1 NP3 <END>.
 As discussed under <START:whereisdiscussed> NP1, <END> <START:whatisdiscussed> NP2 is NP3 <END>

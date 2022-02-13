@@ -47,7 +47,9 @@ public class Example {
 
             String sentence=sentences[i];
             String sequence = phraseFinder.convertToNounPhrasedSequence(sentence);
+            log.info("2. sequence: {} ", sequence);
             List<QuestionBean> names = questionFinder.questions(sequence.split("-"));
+            log.info("3. names: {}", names);
             CommonBag commonBag = new CommonBag();
             commonBag.setString(sentence);
             commonBag.addToObjects(phraseFinder.getPhraseForm());
@@ -58,6 +60,7 @@ public class Example {
             map.put("names", names);
             map.put("commonBag", commonBag);
             commonBag = questionPhraseAggregator.qq(map);
+            log.info("4. questionPhraseAggregator: {} ",commonBag);
             commonBags.add(commonBag);
 
             i++;

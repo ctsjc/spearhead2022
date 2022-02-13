@@ -35,7 +35,7 @@ public class PhraseFinder {
 
     public String convertToNounPhrasedSequence(String sentence) {
         phraseForm = getPhraseForm(sentence);
-        log.info("JJJ phraseForm {}",JsonPrinter.print(phraseForm));
+        log.info("2 phraseForm {}",JsonPrinter.print(phraseForm));
         List<Map<String, String>> phrases = phraseForm.getPhrases();
         int i=0;
         String[] seq = phraseForm.getPhraseSequence().split("-");
