@@ -3,7 +3,6 @@ package com.spearhead.agidoda.beans;
 import lombok.Data;
 import lombok.ToString;
 
-@ToString
 @Data
 public class QuestionBean {
     String phrase;
@@ -14,5 +13,14 @@ public class QuestionBean {
         this.phrase = phrase;
         this.question = question;
         this.probability = probability;
+    }
+
+    @Override
+    public String toString() {
+        return "\nQuestionBean{" +
+                "\nphrase='" + phrase + '\'' +
+                "\tquestion='" + question + '\'' +
+                "\tprobability='" + probability + '\'' +
+                '}';
     }
 }

@@ -18,8 +18,7 @@ public class SpearheadTraining {
     String modelPath = "/train/unitedModel.txt";
 
     NameFinderME nameFinder = setupModel();
-
-
+    //NameFinderME nameFinder;
 
     private NameFinderME setupModel() {
         try {

@@ -28,6 +28,10 @@ public class QuestionFinder {
 
     }
 
+    /**
+     * input :: "With NP1 in NP2, NP3 has NP4".split("\\s+");
+     *
+     * */
     public List<QuestionBean> questions(String[] sequence){
         List<QuestionBean> questionBeans= new ArrayList<>();
         InputStream modelIn=null;
@@ -43,7 +47,7 @@ public class QuestionFinder {
                                 .mapToObj(i -> sequence[i])
                                 .collect(Collectors.joining(" "));
                         log.info("find type: " + span.getType() + ",name: " + named + "\t" + (span.getProb() * 100));
-                        questionBeans.add(new QuestionBean(span.getType(), named, String.valueOf(span.getProb() * 100)));
+                        questionBeans.add(new QuestionBean(named, span.getType(), String.valueOf(span.getProb() * 100)));
                     });
         } catch (IOException e) {
             e.printStackTrace();
