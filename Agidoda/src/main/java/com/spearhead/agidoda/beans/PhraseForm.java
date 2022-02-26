@@ -22,7 +22,7 @@ public class PhraseForm {
                 "\nphrases=" + phrases.stream().map(entrySet -> {
             String rkey = (String) entrySet.keySet().toArray()[0];
             String key = null;
-            if (rkey.contains("B")) {
+            if (rkey.contains("B") && rkey.contains("-")) {
                 key = rkey.split("-")[1];
             } else if (rkey.contains("O")) {
                 key = rkey;

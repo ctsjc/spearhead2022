@@ -20,10 +20,11 @@ public class PhraseFinder {
     @Autowired
     OpenNLPService openNLPService;
     PhraseForm phraseForm;
+
     /**
      * input :: "With key global aviation rights in North America, Asia-Pacific, Europe, Middle East and Latin America, UAL has the world’s most comprehensive global route network. "
      * output :: PP-NP-PP-NP-O-NP-VP-NP
-    * */
+     */
     public String convertToPhrasedSequence(String sentence) {
         phraseForm = getPhraseForm(sentence);
         return phraseForm.getPhraseSequence();
@@ -35,27 +36,55 @@ public class PhraseFinder {
 
     public String convertToNounPhrasedSequence(String sentence) {
         phraseForm = getPhraseForm(sentence);
-        log.info("2 phraseForm {}",JsonPrinter.print(phraseForm));
+        log.info("2 phraseForm {}", JsonPrinter.print(phraseForm));
         List<Map<String, String>> phrases = phraseForm.getPhrases();
-        int i=0;
         String[] seq = phraseForm.getPhraseSequence().split("-");
-        List<String> updatedSequence= new ArrayList<>();
+        List<String> updatedSequence = replaceNonNounPhrase(phrases, seq);
+        log.info("2 Intermittent\nupdatedSequence:{}\nphrases{}\nseq:{}", updatedSequence, phrases, seq);
+        log.debug(phraseForm.getPhraseSequence());
+        String upSequence = String.join("-", updatedSequence);
+        log.debug(upSequence);
+        return upSequence;
+    }
 
-        while(i < phrases.size()){
+    /**
+     * this method will convert returns the corresponding verb instead of verb phrase identifier
+     */
+    private List<String> replaceNonNounPhrase(List<Map<String, String>> phrases, String[] seq) {
+        List<String> updatedSequence = new ArrayList<>();
+        int i = 0;
+        while (i < phrases.size()) {
             Map<String, String> phraseMap = phrases.get(i);
             String rkey = (String) phraseMap.keySet().toArray()[0];
-            if( !rkey.equals("NP")){
-                 String value = phraseMap.get(rkey);
-                 updatedSequence.add(value);
-            }else{
+            if (!rkey.equals("NP")) {
+                String value = phraseMap.get(rkey);
+                updatedSequence.add(value);
+            } else {
                 updatedSequence.add(seq[i]);
             }
             i++;
         }
-        log.debug(phraseForm.getPhraseSequence());
-        String upSequence=String.join("-", updatedSequence);
-        log.debug(upSequence);
-        return upSequence;
+        return updatedSequence;
+    }
+
+    /**
+     * this method will convert returns the corresponding verb instead of verb phrase identifier
+     */
+    private List<String> groupNounPhrase(List<Map<String, String>> phrases, String[] seq) {
+        List<String> updatedSequence = new ArrayList<>();
+        int i = 0;
+        while (i < phrases.size()) {
+            Map<String, String> phraseMap = phrases.get(i);
+            String rkey = (String) phraseMap.keySet().toArray()[0];
+            if (!rkey.equals("NP")) {
+                String value = phraseMap.get(rkey);
+                updatedSequence.add(value);
+            } else {
+                updatedSequence.add(seq[i]);
+            }
+            i++;
+        }
+        return updatedSequence;
     }
 
 
@@ -66,21 +95,21 @@ public class PhraseFinder {
         phraseForm.setSentence(sentence);
         List<String> sequence = new ArrayList<>();
 
-        int i=0;
-        List<Map<String, String>> phrases=new ArrayList<>();
-        while(i < chunks.size()){
+        int i = 0;
+        List<Map<String, String>> phrases = new ArrayList<>();
+        while (i < chunks.size()) {
             Map<String, String> map = new HashMap<>();
             ChunkGroup chunkGroup = chunks.get(i);
             Optional<String> key = Optional.of(chunkGroup.getChunks().get(0));
-            if( key.isPresent()){
-                String chunkType= key.get();// B-NP, I-NP, O, NP
-                log.info("chunkGroup {}",chunkGroup);
+            if (key.isPresent()) {
+                String chunkType = key.get();// B-NP, I-NP, O, NP
+                log.info("chunkGroup {}", chunkGroup);
                 if (chunkType.contains("B-")) {
-                    sequence.add(chunkType.split("-")[1]+""+i);
+                    sequence.add(chunkType.split("-")[1] + "" + i);
                 } else if (chunkType.contains("O")) {
-                    sequence.add(chunkType+""+i);
-                }else{
-                    sequence.add(chunkType+""+i);
+                    sequence.add(chunkType + "" + i);
+                } else {
+                    sequence.add(chunkType + "" + i);
                 }
             }
 
@@ -88,10 +117,10 @@ public class PhraseFinder {
             map.put(key.get(), phrase);
             phrases.add(map);
             log.info("ChunkGroup : {}" +
-                    "\nsequence : {}" +
-                    "\n Phrase : {}" +
-                            "\nMap : {}"+
-                    "\nPhrases : {}",
+                            "\nsequence : {}" +
+                            "\n Phrase : {}" +
+                            "\nMap : {}" +
+                            "\nPhrases : {}",
                     JsonPrinter.print(chunkGroup), JsonPrinter.print(sequence), JsonPrinter.print(phrase)
                     , JsonPrinter.print(map)
                     , JsonPrinter.print(phrases));
@@ -145,7 +174,7 @@ public class PhraseFinder {
 
         String[] tagArray = openNLPService.getPosTagger().tag(tokenize);
         List<String> tags = Arrays.asList(tagArray);
-        Span[] chunks =  openNLPService.getChunker().chunkAsSpans(tokenize, tagArray);
+        Span[] chunks = openNLPService.getChunker().chunkAsSpans(tokenize, tagArray);
         log.info("chunkSpan :{}", openNLPService.getChunker().chunkAsSpans(tokenize, tagArray));
 
         ChunkGroup chunkGroup = new ChunkGroup();
@@ -154,9 +183,9 @@ public class PhraseFinder {
             chunkGroup = new ChunkGroup();
             lists.add(chunkGroup);
             chunkGroup.getChunks().add(type);
-            StringBuilder phrase=new StringBuilder();
-            StringBuilder tag=new StringBuilder();
-            for( int j= chunks[i].getStart(); j < chunks[i].getEnd();j++){
+            StringBuilder phrase = new StringBuilder();
+            StringBuilder tag = new StringBuilder();
+            for (int j = chunks[i].getStart(); j < chunks[i].getEnd(); j++) {
                 phrase.append(tokens.get(j)).append(" ");
                 tag.append(tags.get(j)).append(" ");
             }
@@ -166,12 +195,12 @@ public class PhraseFinder {
     }
 
 
-    public String find(String sequencePart){
+    public String find(String sequencePart) {
         List<Map<String, String>> phrases = phraseForm.getPhrases();
         String[] seq = phraseForm.getPhraseSequence().split("-");
-        int i=0;
-        while(i < phrases.size()){
-            if(sequencePart.equals(seq[i])){
+        int i = 0;
+        while (i < phrases.size()) {
+            if (sequencePart.equals(seq[i])) {
                 Map<String, String> phraseMap = phrases.get(i);
                 String rkey = (String) phraseMap.keySet().toArray()[0];
                 return phraseMap.get(rkey);
@@ -179,5 +208,11 @@ public class PhraseFinder {
             i++;
         }
         return "";
+    }
+
+    //"NP0-spoke-NP2-allows-NP4-to transport-NP6-between-NP8-of-NP10-with-NP12-than-if-NP15-were served"
+    public String groupByVerb(String sequence) {
+
+        return null;
     }
 }
