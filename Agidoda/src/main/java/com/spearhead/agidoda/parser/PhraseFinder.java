@@ -17,9 +17,15 @@ import java.util.stream.Collectors;
 @Service
 public class PhraseFinder {
 
-    @Autowired
-    OpenNLPService openNLPService;
+
     PhraseForm phraseForm;
+
+    @Autowired
+    ChunkFinder chunkFinder;
+
+
+    @Autowired
+    ChunkSPFinder spFinder;
 
     /**
      * input :: "With key global aviation rights in North America, Asia-Pacific, Europe, Middle East and Latin America, UAL has the world’s most comprehensive global route network. "
@@ -34,6 +40,10 @@ public class PhraseFinder {
         return phraseForm;
     }
 
+
+    public void some(){
+
+    }
     public String convertToNounPhrasedSequence(String sentence) {
         phraseForm = getPhraseForm(sentence);
         log.info("2 phraseForm {}", JsonPrinter.print(phraseForm));
@@ -56,7 +66,7 @@ public class PhraseFinder {
         while (i < phrases.size()) {
             Map<String, String> phraseMap = phrases.get(i);
             String rkey = (String) phraseMap.keySet().toArray()[0];
-            if (!rkey.equals("NP")) {
+            if (!rkey.equals("B-NP")) {
                 String value = phraseMap.get(rkey);
                 updatedSequence.add(value);
             } else {
@@ -89,7 +99,7 @@ public class PhraseFinder {
 
 
     private PhraseForm getPhraseForm(String sentence) {
-        List<ChunkGroup> chunks = toChunkGroupsV2(sentence);
+        List<ChunkGroup> chunks = chunkFinder.toChunkGroups(sentence);
         log.info("chunks : {}", JsonPrinter.print(chunks));
         PhraseForm phraseForm = new PhraseForm();
         phraseForm.setSentence(sentence);
@@ -133,66 +143,6 @@ public class PhraseFinder {
     }
 
 
-    public List<ChunkGroup> toChunkGroups(String sentence) {
-        List<ChunkGroup> lists = new ArrayList<>();
-
-        String[] tokenize = openNLPService.getTokenizer().tokenize(sentence);
-        List<String> tokens = Arrays.asList(tokenize);
-
-        String[] tagArray = openNLPService.getPosTagger().tag(tokenize);
-        List<String> tags = Arrays.asList(tagArray);
-        String[] chunk = openNLPService.getChunker().chunk(tokenize, tagArray);
-        log.info("chunk :{}", chunk);
-        log.info("chunkSpan :{}", openNLPService.getChunker().chunkAsSpans(tokenize, tagArray));
-        List<String> chunks = Arrays.asList(chunk);
-
-        ChunkGroup chunkGroup = new ChunkGroup();
-        for (int i = 0; i < chunks.size(); i++) {
-            char firstChar = chunks.get(i).charAt(0);
-            if (firstChar == 'B' || firstChar == 'O') {
-                chunkGroup = new ChunkGroup();
-                lists.add(chunkGroup);
-                chunkGroup.getChunks().add(chunks.get(i));
-
-                chunkGroup.getTokens().add(new TokenTuple(tokens.get(i), tags.get(i)));
-            } else if (firstChar == 'I') {
-                chunkGroup.getChunks().add(chunks.get(i));
-                chunkGroup.getTokens().add(new TokenTuple(tokens.get(i), tags.get(i)));
-            } else {
-                chunkGroup.getChunks().add(chunks.get(i));
-                chunkGroup.getTokens().add(new TokenTuple(tokens.get(i), tags.get(i)));
-            }
-        }
-        return lists;
-    }
-
-    public List<ChunkGroup> toChunkGroupsV2(String sentence) {
-        List<ChunkGroup> lists = new ArrayList<>();
-
-        String[] tokenize = openNLPService.getTokenizer().tokenize(sentence);
-        List<String> tokens = Arrays.asList(tokenize);
-
-        String[] tagArray = openNLPService.getPosTagger().tag(tokenize);
-        List<String> tags = Arrays.asList(tagArray);
-        Span[] chunks = openNLPService.getChunker().chunkAsSpans(tokenize, tagArray);
-        log.info("chunkSpan :{}", openNLPService.getChunker().chunkAsSpans(tokenize, tagArray));
-
-        ChunkGroup chunkGroup = new ChunkGroup();
-        for (int i = 0; i < chunks.length; i++) {
-            String type = chunks[i].getType();
-            chunkGroup = new ChunkGroup();
-            lists.add(chunkGroup);
-            chunkGroup.getChunks().add(type);
-            StringBuilder phrase = new StringBuilder();
-            StringBuilder tag = new StringBuilder();
-            for (int j = chunks[i].getStart(); j < chunks[i].getEnd(); j++) {
-                phrase.append(tokens.get(j)).append(" ");
-                tag.append(tags.get(j)).append(" ");
-            }
-            chunkGroup.getTokens().add(new TokenTuple(phrase.toString().trim(), tag.toString().trim()));
-        }
-        return lists;
-    }
 
 
     public String find(String sequencePart) {

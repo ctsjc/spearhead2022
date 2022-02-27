@@ -42,10 +42,12 @@ public class AgidodaApplication implements CommandLineRunner {
                 "Financial information on the Company’s operating revenues by geographic regions, as reported to the U.S. Department of Transportation (the “DOT”), can be found in Note 17 to the financial statements included in Part II, Item 8 of this report.";
 */
 
-        inputParagraph = "The hub and spoke system allows us to transport passengers between a large number of destinations with substantially more frequent service than if each route were served directly.";
+        inputParagraph = "The hub and spoke system allows us to transport passengers between a large number of destinations with substantially" +
+                " more frequent service than if each route were served directly.";
 
 
-        example.testQuestionFinder(inputParagraph);
+        //example.testQuestionFinder(inputParagraph);
+        example.testPhraseFinder();
         System.exit(0);
     }
 }

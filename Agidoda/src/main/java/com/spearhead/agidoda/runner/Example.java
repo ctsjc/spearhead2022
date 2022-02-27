@@ -4,7 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spearhead.agidoda.aggregator.QuestionPhraseAggregator;
 import com.spearhead.agidoda.beans.CommonBag;
 import com.spearhead.agidoda.beans.QuestionBean;
+import com.spearhead.agidoda.beans.chunks.ChunkGroup;
 import com.spearhead.agidoda.engine.opennlp.OpenNLPService;
+import com.spearhead.agidoda.parser.ChunkSPFinder;
 import com.spearhead.agidoda.parser.PhraseFinder;
 import com.spearhead.agidoda.parser.QuestionFinder;
 import com.spearhead.agidoda.utility.JsonPrinter;
@@ -33,8 +35,14 @@ public class Example {
     @Autowired
     QuestionPhraseAggregator questionPhraseAggregator;
 
+    @Autowired
+    ChunkSPFinder spFinder;
     public void testPhraseFinder() {
+        String[] strs="NP-CC-VP-NP-VP-NP-VP-NP-PP-NP-PP-NP-PP-NP-SBAR-PP-NP-VP".split("-");
+        String[] tags= "NP-and-spoke-NP-allows-NP-to transport-NP-between-NP-of-NP-with-NP-than-if-NP-were served-directly.".split("-");
 
+        List<ChunkGroup> outcome = spFinder.toChunkGroups(strs, tags);
+        System.out.println( JsonPrinter.print(outcome));
     }
 
     public  List<CommonBag> testQuestionFinder(String paragraph) {
@@ -66,13 +74,13 @@ public class Example {
             i++;
         }
 
-        List<CommonBag> cs = commonBags.stream().map(commonBag -> {
+      /*  List<CommonBag> cs = commonBags.stream().map(commonBag -> {
             commonBag.setObjects(null);
             commonBag.setMapList(null);
             return commonBag;
-        }).collect(Collectors.toList());
+        }).collect(Collectors.toList());*/
         log.info("\n===========================\n");
-        log.info(JsonPrinter.print(cs));
+        log.info(JsonPrinter.print(commonBags));
         return commonBags;
     }
 
