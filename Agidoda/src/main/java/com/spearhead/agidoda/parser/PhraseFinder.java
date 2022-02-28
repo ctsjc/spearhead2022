@@ -1,12 +1,10 @@
 package com.spearhead.agidoda.parser;
 
-import com.spearhead.agidoda.beans.chunks.ChunkGroup;
 import com.spearhead.agidoda.beans.PhraseForm;
+import com.spearhead.agidoda.beans.chunks.ChunkGroup;
 import com.spearhead.agidoda.beans.chunks.TokenTuple;
-import com.spearhead.agidoda.engine.opennlp.OpenNLPService;
 import com.spearhead.agidoda.utility.JsonPrinter;
 import lombok.extern.slf4j.Slf4j;
-import opennlp.tools.util.Span;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

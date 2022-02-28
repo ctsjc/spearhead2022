@@ -4,13 +4,9 @@ import com.spearhead.agidoda.beans.chunks.ChunkGroup;
 import com.spearhead.agidoda.utility.JsonPrinter;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
-import org.mockito.Spy;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class ChunkSPFinderTest {
     @InjectMocks

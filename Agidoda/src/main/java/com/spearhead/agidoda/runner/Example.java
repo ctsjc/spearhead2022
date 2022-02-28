@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -38,11 +37,11 @@ public class Example {
     @Autowired
     ChunkSPFinder spFinder;
     public void testPhraseFinder() {
-        String[] strs="NP-CC-VP-NP-VP-NP-VP-NP-PP-NP-PP-NP-PP-NP-SBAR-PP-NP-VP".split("-");
-        String[] tags= "NP-and-spoke-NP-allows-NP-to transport-NP-between-NP-of-NP-with-NP-than-if-NP-were served-directly.".split("-");
+        String[] strs= "NP-and-spoke-NP-allows-NP-to transport-NP-between-NP-of-NP-with-NP-than-if-NP-were served directly".split("-");
+        String[] tags="NP-CC-VP-NP-VP-NP-VP-NP-PP-NP-PP-NP-PP-NP-SBAR-PP-NP-VP".split("-");
 
         List<ChunkGroup> outcome = spFinder.toChunkGroups(strs, tags);
-        System.out.println( JsonPrinter.print(outcome));
+        //System.out.println( JsonPrinter.print(outcome));
     }
 
     public  List<CommonBag> testQuestionFinder(String paragraph) {

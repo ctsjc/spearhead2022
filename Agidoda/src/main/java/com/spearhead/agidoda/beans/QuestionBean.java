@@ -1,7 +1,6 @@
 package com.spearhead.agidoda.beans;
 
 import lombok.Data;
-import lombok.ToString;
 
 @Data
 public class QuestionBean {
