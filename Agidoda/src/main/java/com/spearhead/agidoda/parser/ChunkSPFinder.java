@@ -7,10 +7,13 @@ import lombok.extern.slf4j.Slf4j;
 import opennlp.tools.chunker.ChunkerME;
 import opennlp.tools.chunker.ChunkerModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.FileSystems;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,11 +25,14 @@ public class ChunkSPFinder {
     @Autowired
     OpenNLPService openNLPService;
 
+    private String modelDirectory;
+
     private ChunkerME chunker;
 
     @Autowired
-    public ChunkSPFinder() {
+    public ChunkSPFinder(@Value("${model.custom.path}") String modelDirectory) {
         try {
+            this.modelDirectory = modelDirectory;
             this.chunker = setChunkerME();
         } catch (IOException e) {
             e.printStackTrace();
@@ -35,8 +41,12 @@ public class ChunkSPFinder {
 
     private ChunkerME setChunkerME() throws IOException {
 
-        InputStream inputStreamChunker = getClass()
-                .getResourceAsStream("/models/chunkBasic.bin");
+        log.info("File is read from {}", modelDirectory +
+                FileSystems.getDefault().getSeparator() + "chunkBasic.bin");
+
+
+        InputStream inputStreamChunker = new FileInputStream(modelDirectory +
+                        FileSystems.getDefault().getSeparator() + "chunkBasic.bin");
         ChunkerModel chunkerModel
                 = new ChunkerModel(inputStreamChunker);
         ChunkerME chunker = new ChunkerME(chunkerModel);
