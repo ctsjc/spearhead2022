@@ -37,7 +37,9 @@ public class Example {
     @Autowired
     ChunkSPFinder spFinder;
     public void testPhraseFinder() {
-        String[] strs= "NP-and-spoke-NP-allows-NP-to transport-NP-between-NP-of-NP-with-NP-than-if-NP-were served directly".split("-");
+        String[] strs= ("NP-and-spoke-" +
+                "NP-allows-NP-to transport-NP-between-NP-of-NP-with-NP-" +
+                "than-if-NP-were served directly").split("-");
         String[] tags="NP-CC-VP-NP-VP-NP-VP-NP-PP-NP-PP-NP-PP-NP-SBAR-PP-NP-VP".split("-");
 
         List<ChunkGroup> outcome = spFinder.toChunkGroups(strs, tags);
