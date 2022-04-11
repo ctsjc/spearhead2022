@@ -1,0 +1,55 @@
+Access control list 
+ACL
+Auto scaling
+Buckets
+CloudFront
+CloudTrail
+CloudWatch
+Consolidated billing
+DNS server
+DynamoDB
+Elastic Block Store
+EBS
+Elastic Compute Cloud
+EC2
+Elastic Load Balancing
+ELB
+ElastiCache
+Elasticity
+Fault tolerance
+Firewall
+Folder
+High availability
+IAM users
+Identity and Access Management
+IAM
+Lambda
+Object availability
+Object durability
+Object lifecycle
+Object sharing
+Object versioning
+Organizations
+Principle of least privilege
+Publishers
+Relational Database Service
+RDS
+RedShift
+Roles
+Route 53
+Scalability
+Security group
+SG
+Shared responsibility model
+Simple Notification Service
+SNS
+Simple Storage Service
+S3
+Storage class
+Subnet
+Subscriptions
+Topics
+Trusted Advisor
+User credentials
+Virtual Private Cloud
+VPC

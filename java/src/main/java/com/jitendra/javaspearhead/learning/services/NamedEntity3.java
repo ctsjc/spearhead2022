@@ -3,7 +3,6 @@ package com.jitendra.javaspearhead.learning.services;
 import lombok.extern.slf4j.Slf4j;
 import opennlp.tools.namefind.*;
 import opennlp.tools.util.*;
-import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;

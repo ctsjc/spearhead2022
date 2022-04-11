@@ -2,10 +2,8 @@ package com.jitendra.javaspearhead.learning.services;
 
 import opennlp.tools.postag.*;
 import opennlp.tools.util.*;
-import org.springframework.stereotype.Service;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.Dictionary;
 
 

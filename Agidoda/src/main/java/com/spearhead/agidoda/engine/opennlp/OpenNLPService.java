@@ -2,9 +2,12 @@ package com.spearhead.agidoda.engine.opennlp;
 
 
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import opennlp.tools.chunker.ChunkerME;
 import opennlp.tools.chunker.ChunkerModel;
+import opennlp.tools.dictionary.Dictionary;
 import opennlp.tools.lemmatizer.DictionaryLemmatizer;
+import opennlp.tools.namefind.DictionaryNameFinder;
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.postag.POSModel;
@@ -14,11 +17,13 @@ import opennlp.tools.sentdetect.SentenceModel;
 import opennlp.tools.tokenize.WhitespaceTokenizer;
 import org.springframework.stereotype.Service;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 @Service
 @Data
+@Slf4j
 public class OpenNLPService {
 
     SentenceDetectorME sdetector;
@@ -27,6 +32,7 @@ public class OpenNLPService {
     private POSTaggerME posTagger;
     private DictionaryLemmatizer lemmatizer;
     private ChunkerME chunker;
+
     public OpenNLPService() {
         try {
             this.sdetector = setSentenceDetector();
@@ -74,6 +80,18 @@ public class OpenNLPService {
                 .getResourceAsStream("/models/en-pos-maxent.bin");
         POSModel posModel = new POSModel(inputStreamPOSTagger);
         return new POSTaggerME(posModel);
+    }
+
+    public DictionaryNameFinder getDictionaryNameFinder(String modelFile) {
+        Dictionary dictionary = null;
+        try {
+            FileInputStream fileInputStream = new FileInputStream(modelFile+"dictionary-aws.bin");
+            dictionary = new Dictionary(fileInputStream);
+            return new DictionaryNameFinder(dictionary, "aws");
+        } catch (IOException e) {
+            log.error(e.getLocalizedMessage(), e);
+        }
+        return null;
     }
 
     public NameFinderME createNameFinder(String modelFile) throws IOException {

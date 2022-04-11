@@ -3,8 +3,8 @@ package com.jitendra.javaspearhead.learning;
 import com.jitendra.javaspearhead.learning.beans.ChunkGroup;
 import com.jitendra.javaspearhead.learning.beans.PartOfSpeech;
 import com.jitendra.javaspearhead.learning.beans.Tuple;
-import com.jitendra.javaspearhead.learning.services.chunk.ChunkService;
 import com.jitendra.javaspearhead.learning.services.OpenNLPService;
+import com.jitendra.javaspearhead.learning.services.chunk.ChunkService;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import opennlp.tools.util.Span;
@@ -13,7 +13,6 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;

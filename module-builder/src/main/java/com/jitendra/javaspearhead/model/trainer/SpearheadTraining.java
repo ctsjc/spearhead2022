@@ -6,6 +6,8 @@ import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
 import opennlp.tools.util.TrainingParameters;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -17,7 +19,15 @@ public class SpearheadTraining {
 
     String modelPath = "/train/unitedModel.txt";
 
-    NameFinderME nameFinder = setupModel();
+    String outpath;
+    NameFinderME nameFinder;
+    @Autowired
+    public SpearheadTraining(@Value("${model.outpath}")String outpath) {
+        this.outpath = outpath;
+        nameFinder = setupModel();
+    }
+
+
     //NameFinderME nameFinder;
 
     private NameFinderME setupModel() {
@@ -35,7 +45,7 @@ public class SpearheadTraining {
             // Write the file
             BufferedOutputStream modelOut = null;
             try {
-                File modelFile = new File("unitedModel.bin");
+                File modelFile = new File(outpath+"/unitedModel.bin");
 
                 if (!modelFile.exists()) {
                     modelFile.createNewFile();

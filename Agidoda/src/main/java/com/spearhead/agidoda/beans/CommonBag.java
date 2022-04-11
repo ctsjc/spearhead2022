@@ -14,7 +14,7 @@ public class CommonBag {
     List<Map<String, String>> mapList;
     Map<String, String> map;
     List<Object> objects;
-
+    Map<String, String> dictionaryWord2SentenceMapping;
     public CommonBag() {
         map = new HashMap<>();
         mapList = new ArrayList<>();

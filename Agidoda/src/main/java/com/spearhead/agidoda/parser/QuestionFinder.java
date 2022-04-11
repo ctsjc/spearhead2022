@@ -5,11 +5,13 @@ import lombok.extern.slf4j.Slf4j;
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.util.Span;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.FileSystems;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -23,9 +25,11 @@ import java.util.stream.Stream;
 @Service
 public class QuestionFinder {
     String modelFile = "unitedModel.bin";
-    NameFinderME nameFinder=null;
-    public QuestionFinder() {
+    private String modelDirectory;
 
+    NameFinderME nameFinder=null;
+    public QuestionFinder(@Value("${model.custom.path}") String modelDirectory) {
+        this.modelDirectory = modelDirectory;
     }
 
     /**
@@ -36,7 +40,8 @@ public class QuestionFinder {
         List<QuestionBean> questionBeans= new ArrayList<>();
         InputStream modelIn=null;
         try {
-            modelIn = new FileInputStream(modelFile);
+            modelIn = new FileInputStream(modelDirectory +
+                    FileSystems.getDefault().getSeparator() +modelFile);
             TokenNameFinderModel model = new TokenNameFinderModel(modelIn);
             nameFinder = new NameFinderME(model);
             Span[] names = nameFinder.find(sequence);

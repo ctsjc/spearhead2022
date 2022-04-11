@@ -1,8 +1,14 @@
 package com.jitendra.javaspearhead.learning.services;
 
 import lombok.extern.slf4j.Slf4j;
-import opennlp.tools.postag.*;
-import opennlp.tools.util.*;
+import opennlp.tools.postag.POSModel;
+import opennlp.tools.postag.POSSample;
+import opennlp.tools.postag.POSTaggerME;
+import opennlp.tools.postag.WordTagSampleStream;
+import opennlp.tools.util.InputStreamFactory;
+import opennlp.tools.util.ObjectStream;
+import opennlp.tools.util.PlainTextByLineStream;
+import opennlp.tools.util.TrainingParameters;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

@@ -1,14 +1,9 @@
 package com.jitendra.javaspearhead.learning.beans;
 
-import com.jitendra.javaspearhead.learning.CommonExample;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.With;
-
-import java.util.function.BiFunction;
-import java.util.function.Function;
-import java.util.function.Supplier;
 
 @Data
 @With
