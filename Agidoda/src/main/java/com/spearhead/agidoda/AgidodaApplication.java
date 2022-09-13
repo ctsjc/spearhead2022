@@ -45,7 +45,7 @@ public class AgidodaApplication implements CommandLineRunner {
         inputParagraph = "The hub and spoke system allows us to transport passengers between a large number of destinations with substantially" +
                 " more frequent service than if each route were served directly.";
 
-        inputParagraph="AWS Identity and Access Management (IAM) provides fine-grained access control across all of AWS.";
+       // inputParagraph="AWS Identity and Access Management (IAM) provides fine-grained access control across all of AWS.";
         example.testQuestionFinder(inputParagraph);
         //example.testPhraseFinder();
         System.exit(0);

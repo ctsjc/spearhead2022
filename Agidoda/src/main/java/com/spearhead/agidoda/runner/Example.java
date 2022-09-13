@@ -67,13 +67,9 @@ public class Example {
             List<DictionaryTuple> dictionary = dictionaryWordFinder.find(sentence);
             Map<String, String> dictionaryWord2SentenceMapping= new HashMap<>();
 
-            dictionary.forEach(dictionaryTuple -> {
-                log.info("Dictionary ::: {}\t{}",dictionaryTuple.getWord(),dictionaryTuple.getPhrase());
-            });
-            for (int j = 0; j < dictionary.size(); j++) {
-                dictionaryWord2SentenceMapping.put("EN"+j, dictionary.get(j).getWord());
-                sentence=sentence.replace(dictionary.get(j).getWord(), "EN"+j);
-            }
+            print(dictionary);
+
+            sentence = updateSentenceWithDictionaryWordMarkers(sentence, dictionary, dictionaryWord2SentenceMapping);
             log.info("After Dictionary Sentence :: {}",sentence);
 
 
@@ -81,10 +77,11 @@ public class Example {
             /**Its the sequence of Noun by Verbs as it is
              *  sequence | NP0-provides-NP2-across-NP4-of-NP6
              * */
-            String sequence = phraseFinder.convertToNounPhrasedSequence(sentence);
+            String sequence = createNounPhraseVerbSequence(sentence);
             log.info("2. sequence: {} ", sequence);
             List<QuestionBean> names = questionFinder.questions(sequence.split("-"));
             log.info("3. names: {}", names);
+
             CommonBag commonBag = new CommonBag();
             commonBag.setString(sentence);
             commonBag.addToObjects(phraseFinder.getPhraseForm());
@@ -112,6 +109,24 @@ public class Example {
         commonBags.forEach(commonBag -> log.info(JsonPrinter.print(commonBag.getMap())));
 
         return commonBags;
+    }
+
+    private String createNounPhraseVerbSequence(String sentence) {
+        return phraseFinder.convertToNounPhrasedSequence(sentence);
+    }
+
+    private String updateSentenceWithDictionaryWordMarkers(String sentence, List<DictionaryTuple> dictionary, Map<String, String> dictionaryWord2SentenceMapping) {
+        for (int j = 0; j < dictionary.size(); j++) {
+            dictionaryWord2SentenceMapping.put("EN"+j, dictionary.get(j).getWord());
+            sentence = sentence.replace(dictionary.get(j).getWord(), "EN"+j);
+        }
+        return sentence;
+    }
+
+    private void print(List<DictionaryTuple> dictionary) {
+        dictionary.forEach(dictionaryTuple -> {
+            log.info("Dictionary ::: {}\t{}",dictionaryTuple.getWord(),dictionaryTuple.getPhrase());
+        });
     }
 
 

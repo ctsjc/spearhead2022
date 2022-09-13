@@ -53,3 +53,4 @@ Trusted Advisor
 User credentials
 Virtual Private Cloud
 VPC
+The hub and spoke system

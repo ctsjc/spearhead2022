@@ -45,13 +45,14 @@ public class QuestionFinder {
             TokenNameFinderModel model = new TokenNameFinderModel(modelIn);
             nameFinder = new NameFinderME(model);
             Span[] names = nameFinder.find(sequence);
+
             System.out.println("Jay Shree Ram " + names.length);
             Stream.of(names)
                     .forEach(span -> {
                         String named = IntStream.range(span.getStart(), span.getEnd())
                                 .mapToObj(i -> sequence[i])
                                 .collect(Collectors.joining(" "));
-                        log.info("find type: " + span.getType() + ",name: " + named + "\t" + (span.getProb() * 100));
+                        log.info("Span Type : " + span.getType() + ",Sequence Value : " + named + "\tProbabilty : " + (span.getProb() * 100));
                         questionBeans.add(new QuestionBean(named, span.getType(), String.valueOf(span.getProb() * 100)));
                     });
         } catch (IOException e) {
